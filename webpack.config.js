@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
-  devtool: "Inline-source-map",
+  devtool: "inline-source-map",
   devServer: {
     static: "./dist",
   },
@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        usee: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif|webp)$/i,

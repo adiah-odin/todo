@@ -62,7 +62,37 @@ Add some persistence with the Web Storage API (`localStorage`)
 
 Steps:
 
-Setting up a local environment with npm for webpack and set up the configuration.
+- I decided to create the app wholly in the console at the beginning to ensure decoupling of the logic from the DOM-related stuff.
+
+- Setting up a local environment with npm for webpack and set up the configuration.
+
+- A project is a collection of `todos`
+
+  - A default project before user creates any
+
+- A todo is an object
+  - title
+  - description
+  - dueDate
+  - priority
+
+Use a factory function to create todos, since there will be multiple created.
+
+- Something like:
+
+  ```js
+  const Todo = (title, description, dueDate, priority) => {};
+  ```
+
+- Or maybe a class:
+
+  ```js
+  class Todo {
+    constructor(title, description, dueDate, priority) {}
+  }
+  ```
+
+I decided to go with a factory function for the private methods and fields.
 
 ### Built with
 
